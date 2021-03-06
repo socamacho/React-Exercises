@@ -1,19 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
+import PropType from "prop-types";
 
 const Alert = props => {
-	//add the condition inside this function
 
-	return (
-		<div className="alert alert-danger" role="alert">
-			This is a primary alert-check it out!
-		</div>
-	);
 };
 Alert.propTypes = {
-	color: PropTypes.string,
-	text: PropTypes.string
+	//color: PropType.string, //DUDA:Donde llamo este color? R/ No hace nada, si se comenta NO AFECTA la complicacion.
+	text: PropType.string
 };
 
 // here is where the alert component is being used, you don't have to edit this part,

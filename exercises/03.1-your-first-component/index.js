@@ -6,4 +6,5 @@ export const PrintHello = () => {
 };
 
 // change the syntax of the first parameter to make it <PrintHello /> instead of PrintHello()
-ReactDOM.render(PrintHello(), document.querySelector("#myDiv"));
+ReactDOM.render(<PrintHello />, document.querySelector("#myDiv"));
+//Nota> Nueva forma de llamar una funcion en react.

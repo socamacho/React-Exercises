@@ -4,7 +4,15 @@ import PropTypes from "prop-types";
 
 const Alert = props => {
 	//your component here
-
+	let color = "alert-primary"; //SOLUCION: Esto lo hago pq necesito una variable para comparar mis colores
+	if (props.color === "red") color = "alert-danger";
+	else if (props.color === "orange") color = "alert-warning";
+	//ota. Codigo de la linea 12 quiere decir que obtiene el color del usuario y a la vez genera el contenido del HTML
+	return (
+		<div className={`alert ${color}`} role="alert">
+			{props.text}
+		</div>
+	);
 };
 Alert.propTypes = {
 	color: PropTypes.string,
